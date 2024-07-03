@@ -1,0 +1,30 @@
+1.Question table for store all questions ,answer and four option 
+
+select CREATE TABLE `que` (
+  `QueId` int NOT NULL AUTO_INCREMENT,
+  `que` varchar(255) DEFAULT NULL,
+  `option1` varchar(100) DEFAULT NULL,
+  `option2` varchar(100) DEFAULT NULL,
+  `option3` varchar(100) DEFAULT NULL,
+  `option4` varchar(100) DEFAULT NULL,
+  `ans` char(1) DEFAULT NULL,
+  PRIMARY KEY (`QueId`)
+2. score table store the student sid and score
+CREATE TABLE `score` (
+  `scoreid` int NOT NULL AUTO_INCREMENT,
+  `stdid` int DEFAULT NULL,
+  `score` int DEFAULT NULL,
+  PRIMARY KEY (`scoreid`)
+
+3.student table store the student information 
+
+CREATE TABLE `student` (
+  `stdid` int NOT NULL AUTO_INCREMENT,
+  `firstname` varchar(255) DEFAULT NULL,
+  `lastname` varchar(255) DEFAULT NULL,
+  `username` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `city` varchar(255) DEFAULT NULL,
+  `mailid` varchar(255) DEFAULT NULL,
+  `mobileno` int DEFAULT NULL,
+  PRIMARY KEY (`stdid`)
